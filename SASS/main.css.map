@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_breakpoints.scss",
+        "_placeholders.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
