@@ -1,0 +1,22 @@
+.header{
+    position: absolute;
+}
+.logo__icon{
+    margin-right: 2px;
+}
+.logo__link{
+    display: flex;
+    align-items: baseline;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.21;
+    color: $mainTextColor;
+}
+.menu{
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.menu__button{
+    display: none;
+}

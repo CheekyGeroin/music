@@ -1,0 +1,34 @@
+.about{
+    background-color: $cardTextColor;
+    padding-top: 93px;
+    padding-bottom: 52px;
+}
+.about__image{
+    display: block;
+    width: 100%;
+    &--dekstop,&--tablet{
+        @media screen and(max-width: 767px){
+            display: none;
+        }
+    }
+}
+.about__title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;
+    color: $secondTextColor;
+    margin-bottom: 30px;
+}
+.about__text{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.about__accent{
+    display: flex;
+    align-items: flex-start;
+}
+.about__icon{
+    fill: $mainTextColor;
+    margin-left: 7px;
+}
