@@ -18,11 +18,15 @@
     line-height: 1.23;
     color: $secondTextColor;
     margin-bottom: 30px;
+    color: #E270AD;
 }
 .about__text{
     font-size: 15px;
     line-height: 1.2;
     margin-bottom: 30px;
+    &--accent{
+        color: #E270AD;
+    }
 }
 .about__accent{
     display: flex;

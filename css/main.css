@@ -415,12 +415,17 @@ a {
   line-height: 1.23;
   color: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
   margin-bottom: 30px;
+  color: #E270AD;
 }
 
 .about__text {
   font-size: 15px;
   line-height: 1.2;
   margin-bottom: 30px;
+}
+
+.about__text--accent {
+  color: #E270AD;
 }
 
 .about__accent {
@@ -489,5 +494,203 @@ a {
 
 .advantages__text--center {
   text-align: center;
+}
+
+.proposition {
+  padding-top: 52px;
+  padding-bottom: 120px;
+  background-color: #1D212D;
+}
+
+.proposition__title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #E270AD;
+}
+
+@media screen and (max-width: 767px) {
+  .proposition__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px 30px 40px;
+}
+
+.card__title {
+  text-align: center;
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.card__title--green {
+  color: #7AC266;
+}
+
+.card__title--purple {
+  color: #4955A5;
+}
+
+.card__title--pink {
+  color: #D74482;
+}
+
+.card__subtitle {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #616161;
+}
+
+@media screen and (max-width: 767px) {
+  .card__list {
+    margin-bottom: 23px;
+  }
+}
+
+.card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .card__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.card__icon {
+  fill: green;
+  margin-right: 6px;
+}
+
+.card__text {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.card__price {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.card__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 17px 60px;
+  border-radius: 37px;
+  border-color: transparent;
+}
+
+.card__button--green {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-6.93%, #7AC266), color-stop(117.12%, #11897B));
+  background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
+  -webkit-box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(68, 227, 122, 0.5);
+          box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(68, 227, 122, 0.5);
+}
+
+.card__button--purple {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #4955A5), color-stop(89.52%, #6D3092));
+  background: linear-gradient(180deg, #4955A5 -15.38%, #6D3092 89.52%);
+  -webkit-box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(119, 68, 227, 0.5);
+          box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(119, 68, 227, 0.5);
+}
+
+.card__button--pink {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #D74482), color-stop(89.52%, #9B2981));
+  background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+  -webkit-box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(227, 68, 173, 0.5);
+          box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(227, 68, 173, 0.5);
+}
+
+.footer {
+  background-color: #1D212D;
+}
+
+.footer__container {
+  padding: 0px;
+  padding-top: 30px;
+  padding-bottom: 41px;
+  max-width: 315px;
+  border-top: 1px solid #F0F4F3;
+}
+
+.footer__rights {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #F0F4F3;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__rights {
+    margin-bottom: 25px;
+  }
+}
+
+.footer__student-text {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #F0F4F3;
+}
+
+.footer__student-text--accent {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__student-text {
+    max-width: 232px;
+    margin-bottom: 25px;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .social {
+    margin-bottom: 25px;
+  }
+}
+
+.social__item {
+  margin-right: 40px;
+}
+
+.social__icon {
+  fill: #E270AD;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 1.25;
+  max-width: 305px;
+}
+
+.footer__text--accent {
+  color: #E270AD;
 }
 /*# sourceMappingURL=main.css.map */

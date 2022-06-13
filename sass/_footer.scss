@@ -1,0 +1,52 @@
+.footer{
+    
+    background-color: $advantagesTitleColor;
+}
+.footer__container{
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 41px;
+    max-width: 315px;
+    border-top: 1px solid $mainTextColor;
+}
+.footer__rights{
+    font-size: 16px;
+    line-height: 1.25;
+    color: $mainTextColor;
+    @media screen and (max-width: 767px){
+        margin-bottom: 25px;
+    }
+}
+.footer__student-text{
+    font-size: 16px;
+    line-height: 1.25;
+    color: $mainTextColor;
+    &--accent{
+        font-weight: 600;
+        color: $subtitleTextColor;
+    }
+    @media screen and (max-width: 767px){
+        max-width: 232px;
+        margin-bottom: 25px;
+    }
+}
+.social{
+    display: flex;
+   @media screen and (max-width: 767px){
+        margin-bottom: 25px;
+   }
+}
+.social__item{
+    margin-right: 40px;
+}
+.social__icon{
+    fill: #E270AD;
+}
+.footer__text{
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 305px;
+    &--accent{
+        color: #E270AD;
+    }
+}

@@ -1,0 +1,79 @@
+.card{
+    background-color: $subtitleTextColor;
+    border-radius: 18px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px 40px 30px 40px ;
+}
+.card__title{
+    text-align: center;
+    margin-bottom: 23px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    &--green{
+        color: #7AC266;
+    }
+    &--purple{
+        color: #4955A5;
+    }
+    &--pink{
+        color: #D74482;
+    }
+}
+.card__subtitle{
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #616161;
+}
+.card__list{
+    @media screen and (max-width: 767px){
+        margin-bottom: 23px;
+    }
+}
+.card__item{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px){
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+.card__icon{
+    fill: green;
+    margin-right: 6px;
+}
+.card__text{
+    font-size: 15px;
+    line-height: 1.2;
+    color:$cardTextColor;
+}
+.card__price{
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: $cardTextColor;
+}
+.card__button{
+    margin-left:  auto;
+    margin-right: auto;
+    padding: 17px 60px;
+    border-radius: 37px;
+    border-color: transparent;
+    &--green{
+        background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
+        box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(68, 227, 122, 0.5);
+    }
+    &--purple{
+        background: linear-gradient(180deg, #4955A5 -15.38%, #6D3092 89.52%);
+        box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(119, 68, 227, 0.5);
+    }
+    &--pink{
+        background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+        box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(227, 68, 173, 0.5);
+    }
+}

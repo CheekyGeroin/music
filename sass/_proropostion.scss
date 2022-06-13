@@ -1,0 +1,20 @@
+.proposition{
+    padding-top:52px;
+    padding-bottom: 120px;
+    background-color: $advantagesTitleColor;
+}
+.proposition__title{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #E270AD;
+}
+.proposition__item{
+    @media screen and (max-width: 767px){
+        &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+    }
+}
