@@ -1,11 +1,14 @@
 .about{
-    background-color: $cardTextColor;
+    background-color: $advantagesTitleColor;
     padding-top: 93px;
     padding-bottom: 52px;
+    position: relative;
 }
 .about__image{
+    position: absolute;
+    top: 32px;
+    right: 37px;
     display: block;
-    width: 100%;
     &--dekstop,&--tablet{
         @media screen and(max-width: 767px){
             display: none;
@@ -16,8 +19,13 @@
     font-weight: 800;
     font-size: 30px;
     line-height: 1.23;
-    color: $secondTextColor;
+    // background-clip: text;
+    // background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
     margin-bottom: 30px;
+    background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
     color: #E270AD;
 }
 .about__text{
@@ -25,7 +33,11 @@
     line-height: 1.2;
     margin-bottom: 30px;
     &--accent{
-        color: #E270AD;
+        background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: table;
+            color: #E270AD;
     }
 }
 .about__accent{

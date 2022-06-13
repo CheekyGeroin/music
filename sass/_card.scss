@@ -13,12 +13,24 @@
     font-size: 20px;
     line-height: 1.2;
     &--green{
-        color: #7AC266;
+        background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: table;
+            color: #7AC266;
     }
     &--purple{
+        background: linear-gradient(180deg, #4955A5 -15.38%, #6D3092 89.52%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: table;
         color: #4955A5;
     }
     &--pink{
+        background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: table;
         color: #D74482;
     }
 }
@@ -64,6 +76,11 @@
     padding: 17px 60px;
     border-radius: 37px;
     border-color: transparent;
+    font-weight: 700;
+        font-size: 19px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: $subtitleTextColor;
     &--green{
         background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
         box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(68, 227, 122, 0.5);

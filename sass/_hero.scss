@@ -4,6 +4,19 @@
     padding-bottom: 58px;
     margin-right: auto;
     margin-left: auto;
+    @media screen and (max-width: 767px){
+        background-image:linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-375w.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero{
+                background-image:linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-750w.jpg);
+            }
+            
+        }
 }
 .hero__container {
     margin-bottom: 30px;

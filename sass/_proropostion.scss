@@ -7,9 +7,14 @@
     font-weight: 800;
     font-size: 30px;
     line-height: 1.23;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    color: #E270AD;
+    background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
+        color: #E270AD;
 }
 .proposition__item{
     @media screen and (max-width: 767px){

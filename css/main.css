@@ -313,9 +313,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: 600;
   font-size: 19px;
   line-height: 1.21;
@@ -338,6 +338,20 @@ a {
   padding-bottom: 58px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-375w.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-750w.jpg);
+  }
 }
 
 .hero__container {
@@ -393,14 +407,17 @@ a {
 }
 
 .about {
-  background-color: #333333;
+  background-color: #1D212D;
   padding-top: 93px;
   padding-bottom: 52px;
+  position: relative;
 }
 
 .about__image {
+  position: absolute;
+  top: 32px;
+  right: 37px;
   display: block;
-  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -413,8 +430,12 @@ a {
   font-weight: 800;
   font-size: 30px;
   line-height: 1.23;
-  color: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
   margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #E270AD), color-stop(106.14%, #CF4965));
+  background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #E270AD;
 }
 
@@ -425,6 +446,11 @@ a {
 }
 
 .about__text--accent {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #E270AD), color-stop(106.14%, #CF4965));
+  background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #E270AD;
 }
 
@@ -506,8 +532,14 @@ a {
   font-weight: 800;
   font-size: 30px;
   line-height: 1.23;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #E270AD), color-stop(106.14%, #CF4965));
+  background: linear-gradient(180deg, #E270AD -15.38%, #CF4965 106.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #E270AD;
 }
 
@@ -535,14 +567,29 @@ a {
 }
 
 .card__title--green {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-6.93%, #7AC266), color-stop(117.12%, #11897B));
+  background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #7AC266;
 }
 
 .card__title--purple {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #4955A5), color-stop(89.52%, #6D3092));
+  background: linear-gradient(180deg, #4955A5 -15.38%, #6D3092 89.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #4955A5;
 }
 
 .card__title--pink {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.38%, #D74482), color-stop(89.52%, #9B2981));
+  background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
   color: #D74482;
 }
 
@@ -599,6 +646,11 @@ a {
   padding: 17px 60px;
   border-radius: 37px;
   border-color: transparent;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
 
 .card__button--green {
