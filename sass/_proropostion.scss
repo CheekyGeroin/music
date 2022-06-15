@@ -2,6 +2,10 @@
     padding-top:52px;
     padding-bottom: 120px;
     background-color: $advantagesTitleColor;
+    @media screen and (min-width:$tablet){
+        padding-top: 67px;
+        padding-bottom: 101px;
+    }
 }
 .proposition__title{
     font-weight: 800;
@@ -15,11 +19,19 @@
         -webkit-text-fill-color: transparent;
         display: table;
         color: #E270AD;
+        @media screen and (min-width:$tablet){
+            font-size: 40px;
+        }
 }
 .proposition__item{
     @media screen and (max-width: 767px){
         &:not(:last-child) {
                 margin-bottom: 25px;
             }
+    }
+    @media screen and (min-width:$tablet){
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
     }
 }

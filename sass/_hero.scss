@@ -4,10 +4,10 @@
     padding-bottom: 58px;
     margin-right: auto;
     margin-left: auto;
+    background-size: cover;
+    background-position: center;
     @media screen and (max-width: 767px){
         background-image:linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-375w.jpg);
-        background-size: cover;
-        background-position: center;
     }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -17,21 +17,47 @@
             }
             
         }
+    @media screen and (min-width: $tablet){
+        padding-top: 297px;
+        padding-bottom: 57px;
+        background-image: linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-1024w.jpg);
+        
+    }
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .hero {
+                        background-image: linear-gradient(147.94deg, rgba(29, 33, 45, 0.2) 2.88%, rgba(29, 33, 45, 0) 103.72%), url(../image/hero/hero-2048w.jpg);
+                    }
+        
+                }
 }
 .hero__container {
     margin-bottom: 30px;
     @media screen and (max-width: 767px) {
         max-width: 238px;
     }
+    @media screen and (min-width:$tablet){
+        margin-bottom: 77px;
+        text-align: center;
+    }
+    
 }
 .hero__title{
     font-weight: 800;
     font-size: 40px;
     line-height: 1.22;
+    @media screen and (min-width: $tablet){
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
 }
 .hero__text{
     font-size: 15px;
     line-height: 1.2;
+    @media screen and (min-width:$tablet){
+        font-size: 24px;
+    }
 }
 .hero__button{
     font-weight: 700;
@@ -45,14 +71,30 @@
     box-shadow: 6.77778px 6.77778px 14.5238px rgba(52, 54, 74, 0.5), inset 2.90476px 1.93651px 3.87302px rgba(227, 68, 151, 0.5);
     border-radius: 24.2063px;
     border-color: transparent;
+    @media screen and (min-width:$tablet){
+        padding: 22px 27px;
+        margin-bottom: 294px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .hero__scroll{
     display: flex;
+    @media screen and (min-width: $tablet){
+        align-items: center;
+    }
 }
 .hero__icon{
     fill: $subtitleTextColor;
     margin-right: 8px;
 }
 .hero__scroll-text{
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: start;
     color: $subtitleTextColor;
+    @media screen and (min-width: $tablet){
+        font-size: 20px;
+    }
 }

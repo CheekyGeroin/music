@@ -5,6 +5,9 @@
     margin-left: auto;
     margin-right: auto;
     padding:20px 40px 30px 40px ;
+    @media screen and (min-width:$tablet){
+        max-width: 354px;
+    }
 }
 .card__title{
     text-align: center;
@@ -33,16 +36,29 @@
             display: table;
         color: #D74482;
     }
+    @media screen and (min-width:$tablet){
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 37px;
+    }
 }
 .card__subtitle{
     margin-bottom: 8px;
     font-size: 12px;
     line-height: 1.25;
     color: #616161;
+    @media screen and (min-width:$tablet){
+        font-size: 19px;
+        line-height: 1.21;
+        margin-bottom: 11px;
+    }
 }
 .card__list{
     @media screen and (max-width: 767px){
         margin-bottom: 23px;
+    }
+    @media screen and (min-width:$tablet){
+        margin-bottom: 37px;
     }
 }
 .card__item{
@@ -51,6 +67,11 @@
     @media screen and (max-width: 767px){
         &:not(:last-child){
             margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width:$tablet){
+        &:not(:last-child){
+            margin-bottom: 18px;
         }
     }
 }
@@ -62,6 +83,10 @@
     font-size: 15px;
     line-height: 1.2;
     color:$cardTextColor;
+    @media screen and (min-width:$tablet){
+        font-size: 24px;
+        line-height: 1.21;
+    }
 }
 .card__price{
     text-align: center;
@@ -69,8 +94,14 @@
     font-size: 15px;
     line-height: 1.2;
     color: $cardTextColor;
+    @media screen and (min-width:$tablet){
+        font-size: 24px;
+        line-height: 1.21;
+        margin-bottom: 11px;
+    }
 }
 .card__button{
+    display: flex;
     margin-left:  auto;
     margin-right: auto;
     padding: 17px 60px;
@@ -92,5 +123,10 @@
     &--pink{
         background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
         box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(227, 68, 173, 0.5);
+    }
+    @media screen and (min-width:$tablet){
+        font-size: 29px;
+        line-height: 1;
+        padding: 17px 64px;
     }
 }

@@ -11,6 +11,28 @@
     font-size: 19px;
     line-height: 1.21;
     color: $mainTextColor;
+    @media screen and (min-width: $tablet){
+        font-size: 29px;
+        line-height: 1.24;
+    }
+}
+.language{
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.language__list{
+    display: flex;
+}
+.language__item{
+    &:not(:last-child){
+        margin-right: 6px;
+    }
+}
+.language__link{
+    font-size: 20px;
+    line-height: 1.2;
+    color: $mainTextColor;
 }
 .menu{
     @media screen and (max-width: 767px){
