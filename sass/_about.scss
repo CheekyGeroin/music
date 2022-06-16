@@ -6,23 +6,56 @@
     @media screen and (min-width: $tablet){
         padding-top: 211px;
         padding-bottom: 203px;
-        
+    }
+    @media screen and (min-width:$desktop){
+        padding-top: 238px;
+        padding-bottom: 292px;
     }
 }
 .about__image{
     position: absolute;
-    top: 32px;
-    right: 37px;
     display: block;
-    &--dekstop,&--tablet{
+    &--desktop,&--tablet{
         @media screen and(max-width: 767px){
             display: none;
+        }
+    }
+    &--mobile{
+        @media screen and (max-width:767px){
+            top: 32px;
+                right: 37px;
+        }
+        @media screen and (min-width:$tablet) and (max-width:1199px){
+            display: none;
+        }
+        @media screen and (min-width:$desktop){
+            bottom: 74px;
+            right: 410px;
+        }
+    }
+    &--tablet{
+        top: 64px;
+        right: 220px;
+        @media screen and (min-width: $desktop){
+            top: 50px;
+            right: 296px;
+        }
+    }
+    &--desktop{
+        bottom: 110px;
+        right: 46px;
+        @media screen and (min-width:$desktop){
+            bottom: 216px;
+            right: 122px;
         }
     }
 }
 .about__container{
     @media screen and (min-width: $tablet){
         max-width: 443px;
+    }
+    @media screen and (min-width:$desktop){
+        max-width: 777px;
     }
 }
 .about__title{

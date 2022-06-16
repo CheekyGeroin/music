@@ -1,6 +1,10 @@
 .header{
     position: absolute;
 }
+.header__container{
+    display: flex;
+    align-items: baseline;
+}
 .logo__icon{
     margin-right: 2px;
 }
@@ -14,6 +18,8 @@
     @media screen and (min-width: $tablet){
         font-size: 29px;
         line-height: 1.24;
+        align-items: baseline;
+        margin-right: 17px;
     }
 }
 .language{
@@ -33,11 +39,60 @@
     font-size: 20px;
     line-height: 1.2;
     color: $mainTextColor;
+    &--active{
+    position: relative;
+    }
+    &--active::after{
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);;
+    }
+
 }
 .menu{
     @media screen and (max-width: 767px){
         display: none;
     }
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+    @media screen and (min-width:$desktop){
+        margin-left: auto;
+        display: flex;
+        align-items: baseline;
+    }
+}
+.navigation{
+    margin-right: 54px;
+}
+.navigation__list{
+    display: flex;
+}
+.navigation__item{
+    &:not(:last-child){
+        margin-right: 41px;
+    }
+}
+.navigation__link{
+    font-size: 20px;
+    line-height: 1.2;
+    color: $mainTextColor;
+}
+.contact{
+    display: flex;
+    align-items: baseline;
+}
+.contact__icon{
+    margin-right: 6px;
+    fill: $mainTextColor;
+}
+.contact__link{
+    font-size: 20px;
+    line-height: 1.2;
+    color: $mainTextColor;
 }
 .menu__button{
     display: none;

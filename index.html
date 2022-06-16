@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <div class="logo">
           <a class="logo__link" href="./index.html" lang="en">
             <svg class="logo__icon" width="40" height="35">
@@ -23,6 +23,12 @@
             </svg>
             Shwifty</a
           >
+        </div>
+        <div class="language" lang="en">
+          <ul class="language__list">
+            <li class="language__item"> <a href="#" class="language__link ">EN</a></li>
+            <li class="language__item"> <a href="./index.html" class="language__link language__link--active">UA</a></li>
+          </ul>
         </div>
         <button class="menu__button" type="button">
           <svg class="open-icon" width="29" height="23">
@@ -32,22 +38,16 @@
             <use></use>
           </svg>
         </button>
-        <div class="language" lang="en">
-          <ul class="language__list">
-            <li class="language__item"> <a href="#" class="language__link ">EN</a></li>
-            <li class="language__item"> <a href="./index.html" class="language__link active">UA</a></li>
-          </ul>
-        </div>
         <div class="menu">
           <nav class="navigation">
             <ul class="navigation__list">
-              <li>
+              <li class="navigation__item">
                 <a class="navigation__link" href="#">Про нас</a>
               </li>
-              <li>
+              <li class="navigation__item">
                 <a class="navigation__link" href="#">Можливості</a>
               </li>
-              <li>
+              <li class="navigation__item">
                 <a class="navigation__link" href="#">Пропозиції</a>
               </li>
             </ul>
@@ -85,11 +85,13 @@
             class="about__image about__image--mobile"
             srcset="
               ./image/about/family-116w.png 116w,
-              ./image/about/family-232w.png 232w
+              ./image/about/family-232w.png 232w,
+              ./image/about/family-265w.png 265w,
+              ./image/about/family-530w.png 530w
             "
-            sizes="(min-width:1200px) 267px, (min-width: 480px) 116px, 100vw"
+            sizes="(min-width:1200px) 265px, (min-width: 480px) 116px, 100vw"
             alt="Батько с донькою в навушниках "
-            width="116"
+            width="265"
           />
           <div class="about__container">
             <h2 class="about__title">Про нас</h2>
@@ -101,9 +103,11 @@
             </p>
           </div>
           <img
-            class="about__image about__image--dekstop"
-            src=""
+            class="about__image about__image--desktop"
+            srcset="./image/about/boy-265w.png 265w, ./image/about/boy-530w.png 530w"
+            sizes="(min-width: 1200px) 265px, (min-width: 768px) 265px"
             alt="Хлопець слухає музику"
+            width="265"
           />
           <div class="about__accent">
             <p class="about__text about__text--accent">
@@ -115,8 +119,10 @@
           </div>
           <img
             class="about__image about__image--tablet"
-            src=""
+            srcset="./image/about/girl-265w.png 265w, ./image/about/girl-530w.png 530w"
+            sizes="(min-width: 1200px) 265px, (min-width: 768px) 265px"
             alt="Дівчина у навушниках"
+            width="265"
           />
         </div>
       </section>

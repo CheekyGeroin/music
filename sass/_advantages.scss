@@ -5,6 +5,10 @@
         padding-top: 57px;
         padding-bottom: 57px;
     }
+    @media screen and (min-width:$desktop){
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
 }
 
 .advantages__title{
@@ -18,18 +22,14 @@
         font-size: 40px;
     }
 }
-// .advantages__string{
-//     &--first{
-//         @media screen and (max-width: 767px){
-//             margin-bottom: 30px;
-//         }
-//     }
-// }
 .advantages__list{
 @media screen and (min-width:$tablet){
     display: flex;
     flex-wrap: wrap;
     margin: -50px;
+}
+@media screen and (min-width:$desktop){
+    margin: -13px;
 }
 }
 .advantages__item{
@@ -48,6 +48,10 @@
         flex-basis: calc((100% - 2 * 100px) / 2);
         margin: 50px;
         padding: 12px 8px 12px 12px;
+    }
+    @media screen and (min-width: $desktop){
+        flex-basis: calc((100% - 4 * 26px) / 3);
+        margin: 13px;
     }
 }
 .advantages__icon{

@@ -6,6 +6,10 @@
         padding-top: 67px;
         padding-bottom: 101px;
     }
+    @media screen and (min-width:$desktop){
+        padding-top: 101px;
+        padding-bottom: 181px;
+    }
 }
 .proposition__title{
     font-weight: 800;
@@ -23,15 +27,23 @@
             font-size: 40px;
         }
 }
+.proposition__list{
+   @media screen and (min-width:$desktop){
+    display: flex;
+   }
+}
 .proposition__item{
     @media screen and (max-width: 767px){
         &:not(:last-child) {
                 margin-bottom: 25px;
             }
     }
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) and (max-width:1199px){
         &:not(:last-child){
             margin-bottom: 25px;
         }
+    }
+    @media screen and (min-width:$desktop){
+        margin-right: 84px;
     }
 }
