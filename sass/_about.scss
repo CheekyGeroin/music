@@ -24,6 +24,7 @@
         @media screen and (max-width:767px){
             top: 32px;
                 right: 37px;
+                width: 116px;
         }
         @media screen and (min-width:$tablet) and (max-width:1199px){
             display: none;
@@ -90,6 +91,7 @@
 .about__accent{
     display: flex;
     align-items: flex-start;
+    cursor: pointer;
     @media screen and (min-width: $tablet){
         align-items: baseline;
     }

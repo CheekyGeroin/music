@@ -74,29 +74,42 @@
     }
 }
 .hero__button{
+    margin-bottom: 248px;
+    @media screen and (min-width:$tablet){
+        
+        padding: 22px 27px;
+        margin-bottom: 294px;
+        display: flex;
+        
+    }
+}
+.button__link{
+    padding: 18px 26px;
+    background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+    box-shadow: 6.77778px 6.77778px 14.5238px rgba(52, 54, 74, 0.5),inset 2.90476px 1.93651px 3.87302px rgba(227, 68, 151, 0.5);
+    border-radius: 25px;
+    border-color: transparent;
     font-weight: 700;
     font-size: 19px;
     line-height: 1;
     letter-spacing: 0.03em;
-    margin-bottom: 248px;
-    padding: 18px 26px;
     color: $subtitleTextColor;
-    background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
-    box-shadow: 6.77778px 6.77778px 14.5238px rgba(52, 54, 74, 0.5), inset 2.90476px 1.93651px 3.87302px rgba(227, 68, 151, 0.5);
-    border-radius: 24.2063px;
-    border-color: transparent;
+    &:hover, &:focus{
+        background: #9B2981;
+        box-shadow: 0px 0px 20px #FF87C7;
+    }
     @media screen and (min-width:$tablet){
+        padding: 22px 27px;
         font-size: 25px;
         line-height: 0.96;
-        padding: 22px 27px;
-        margin-bottom: 294px;
         display: flex;
         margin-left: auto;
-        margin-right: auto;
+            margin-right: auto;
     }
 }
 .hero__scroll{
     display: flex;
+    cursor: pointer;
     @media screen and (min-width: $tablet){
         align-items: center;
     }

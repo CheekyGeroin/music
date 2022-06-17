@@ -12,6 +12,8 @@
 }
 .card__title{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 23px;
     font-weight: 600;
     font-size: 20px;
@@ -41,6 +43,11 @@
         font-size: 30px;
         line-height: 1.23;
         margin-bottom: 37px;
+    }
+    &--english{
+        @media screen and (min-width:$desktop){
+            max-width: 242px;
+        }
     }
 }
 .card__subtitle{
@@ -102,6 +109,7 @@
     }
 }
 .card__button{
+    cursor: pointer;
     display: flex;
     margin-left:  auto;
     margin-right: auto;
@@ -116,18 +124,33 @@
     &--green{
         background: linear-gradient(180deg, #7AC266 -6.93%, #11897B 117.12%);
         box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(68, 227, 122, 0.5);
+        &:hover, &:focus{
+            background: #11897B;
+            box-shadow: 0px 0px 20px rgba(122, 194, 102, 0.6);
+        }
     }
     &--purple{
         background: linear-gradient(180deg, #4955A5 -15.38%, #6D3092 89.52%);
         box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(119, 68, 227, 0.5);
+        &:hover, &:focus{
+            background: #6D3092;
+            box-shadow: 0px 0px 20px rgba(108, 113, 254, 0.6);
+        }
     }
     &--pink{
         background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
         box-shadow: 2px 5px 10px rgba(52, 54, 74, 0.5), inset 4.42131px 2.94754px 5.89508px rgba(227, 68, 173, 0.5);
+        &:hover, &:focus{
+            background: #9B2981;
+            box-shadow: 0px 0px 20px #FF87C7;
+        }
     }
     @media screen and (min-width:$tablet){
         font-size: 29px;
         line-height: 1;
         padding: 17px 64px;
     }
+    // &:hover .card__button--green, &:focus .card__button--green{
+       
+    // }
 }

@@ -30,6 +30,7 @@
 .proposition__list{
    @media screen and (min-width:$desktop){
     display: flex;
+    justify-content: center;
    }
 }
 .proposition__item{
@@ -44,6 +45,8 @@
         }
     }
     @media screen and (min-width:$desktop){
-        margin-right: 84px;
+        &:not(:last-child){
+            margin-right: 84px;
+        }
     }
 }

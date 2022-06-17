@@ -44,7 +44,7 @@
     }
     @media screen and (min-width:$desktop){
         margin-right: 119px;
-        max-width: 263px;
+        max-width: 297px;
     }
 
 }
@@ -68,6 +68,7 @@
     line-height: 1.25;
     max-width: 305px;
     &--accent{
+        cursor: pointer;
         color: #E270AD;
     }
 }
