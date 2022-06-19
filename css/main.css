@@ -1352,14 +1352,48 @@ a {
           justify-content: center;
 }
 
-.form__checkbox-text {
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__text {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
 }
 
-.form__checkbox-text--accent {
+.checkbox__text--accent {
   text-decoration: underline;
+}
+
+.checkbox__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 7px;
+  width: 19px;
+  height: 19px;
+  background-color: #F8F8F8;
+  border: 0.86364px solid rgba(153, 153, 153, 0.6);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0px 1.72727px 1.72727px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1.72727px 1.72727px rgba(0, 0, 0, 0.2);
 }
 
 .footer {

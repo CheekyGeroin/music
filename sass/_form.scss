@@ -93,7 +93,20 @@
     align-items: center;
     justify-content: center;
 }
-.form__checkbox-text{
+.checkbox__input{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.checkbox__text{
     font-size: 16px;
         line-height: 20px;
         color: $cardTextColor;
@@ -101,4 +114,19 @@
             text-decoration: underline;
 
         }
+}
+.checkbox__icon{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 7px;
+        width: 19px;
+        height: 19px;
+        background-color: #F8F8F8;
+        border: 0.863636px solid rgba(153, 153, 153, 0.6);
+        border-radius: 4px;
+        box-shadow: inset 0px 1.72727px 1.72727px rgba(0, 0, 0, 0.2);
+}
+.checkbox__check-icon{
+   
 }
