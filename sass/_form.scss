@@ -1,0 +1,104 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.4);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hiiden{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 51px 31px;
+        background-color: $mainTextColor;
+        border-radius: 40px;
+        
+        @media screen and (max-width:767px){
+            max-width: 365px;
+            height: 506px;
+        }
+        @media screen and (min-width:$desktop){
+            padding: 58px 140px;
+            max-width: 645px;
+            height: 570px;
+        }
+        .backdrop.is-hiiden &{
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+}
+.modal__title{
+    font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+        color: $cardTextColor;
+        margin-bottom: 31px;
+}
+.form{
+    margin-right: auto;
+    margin-left: auto;
+}
+.form__list{
+    display: flex;
+    flex-direction: column;
+}
+.form__item{
+    &:first-child{
+        margin-bottom: 27px;
+        @media screen and (min-width:$desktop){
+            margin-bottom: 25px;
+        }
+    }
+
+}
+.form__label{
+    display: flex;
+    flex-direction: column;
+}
+.form__text{
+    font-weight: 600;
+        font-size: 15px;
+        line-height: 1.2;
+        color: $cardTextColor;
+        margin-bottom: 12px;
+}
+.form__input{
+    max-width: 302px;
+    height: 42px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    cursor: pointer;
+    @media screen and (min-width:$desktop){
+        max-width: 330px;
+    }
+}
+.form__checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.form__checkbox-text{
+    font-size: 16px;
+        line-height: 20px;
+        color: $cardTextColor;
+        &--accent{
+            text-decoration: underline;
+
+        }
+}

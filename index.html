@@ -26,8 +26,16 @@
         </div>
         <div class="language" lang="en">
           <ul class="language__list">
-            <li class="language__item"> <a href="./english.html" class="language__link ">EN</a></li>
-            <li class="language__item"> <a href="./index.html" class="language__link language__link--active">UA</a></li>
+            <li class="language__item">
+              <a href="./english.html" class="language__link">EN</a>
+            </li>
+            <li class="language__item">
+              <a
+                href="./index.html"
+                class="language__link language__link--active"
+                >UA</a
+              >
+            </li>
           </ul>
         </div>
         <button class="menu__button" type="button">
@@ -107,7 +115,10 @@
           </div>
           <img
             class="about__image about__image--desktop"
-            srcset="./image/about/boy-265w.png 265w, ./image/about/boy-530w.png 530w"
+            srcset="
+              ./image/about/boy-265w.png 265w,
+              ./image/about/boy-530w.png 530w
+            "
             sizes="(min-width: 1200px) 265px, (min-width: 768px) 265px"
             src="./image/about/boy-265w.png"
             alt="Хлопець слухає музику"
@@ -123,7 +134,10 @@
           </div>
           <img
             class="about__image about__image--tablet"
-            srcset="./image/about/girl-265w.png 265w, ./image/about/girl-530w.png 530w"
+            srcset="
+              ./image/about/girl-265w.png 265w,
+              ./image/about/girl-530w.png 530w
+            "
             sizes="(min-width: 1200px) 265px, (min-width: 768px) 265px"
             src="./image/about/girl-265w.png"
             alt="Дівчина у навушниках"
@@ -133,52 +147,49 @@
       </section>
       <section class="advantages" id="advantages">
         <div class="container advantages__container">
-        <h2 class="advantages__title">Можливості</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="44" height="59">
-              <use href="./image/icons.svg#check-list"></use>
-            </svg>
-            <p class="advantages__text">Професійні авторські добірки</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="60" height="60">
-              <use href="./image/icons.svg#music"></use>
-            </svg>
-            <p class="advantages__text">Лише музика, що варта уваги</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="60" height="60">
-              <use href="./image/icons.svg#rewind"></use>
-            </svg>
-            <p class="advantages__text">
-              Медіатека, що оновлюється щосекунди
-            </p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="60" height="60">
-              <use href="./image/icons.svg#heart"></use>
-            </svg>
-            <p class="advantages__text">
-              Мільйони пісень, відібраних вручну
-            </p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="60" height="60">
-              <use href="./image/icons.svg#person"></use>
-            </svg>
-            <p class="advantages__text">Адаптація під ваш смак</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="60" height="60">
-              <use href="./image/icons.svg#earth"></use>
-            </svg>
-            <p class="advantages__text advantages__text--center">
-              Автопереклад текстів пісень українською
-            </p>
-          </li>
-        </ul>
-          
+          <h2 class="advantages__title">Можливості</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="44" height="59">
+                <use href="./image/icons.svg#check-list"></use>
+              </svg>
+              <p class="advantages__text">Професійні авторські добірки</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="60" height="60">
+                <use href="./image/icons.svg#music"></use>
+              </svg>
+              <p class="advantages__text">Лише музика, що варта уваги</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="60" height="60">
+                <use href="./image/icons.svg#rewind"></use>
+              </svg>
+              <p class="advantages__text">
+                Медіатека, що оновлюється щосекунди
+              </p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="60" height="60">
+                <use href="./image/icons.svg#heart"></use>
+              </svg>
+              <p class="advantages__text">Мільйони пісень, відібраних вручну</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="60" height="60">
+                <use href="./image/icons.svg#person"></use>
+              </svg>
+              <p class="advantages__text">Адаптація під ваш смак</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" width="60" height="60">
+                <use href="./image/icons.svg#earth"></use>
+              </svg>
+              <p class="advantages__text advantages__text--center">
+                Автопереклад текстів пісень українською
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="proposition" id="proposition">
@@ -215,6 +226,50 @@
                 <button class="card__button card__button--green" type="button">
                   Обрати
                 </button>
+                <div class="backdrop is-hidden">
+                  <div class="modal">
+                    <h2 class="modal__title">Слухайте дійсно якісну музику!</h2>
+                    <form class="form" autocomplete="off">
+                      <ul class="form__list">
+                        <li class="form__item">
+                          <label class="form__label">
+                            <span class="form__text">Ваш ім’я</span>
+                            <input
+                              class="form__input"
+                              type="text"
+                              name="name"
+                              autofocus
+                              placeholder="Наприклад, Петро"
+                            />
+                          </label>
+                        </li>
+                        <li class="form__item">
+                          <label class="form__label">
+                            <span class="form__text">Ваш номер телефону</span>
+                            <input
+                              class="form__input"
+                              type="tel"
+                              name="phone number"
+                              placeholder="+380 хх ххх хх хх"
+                            />
+                          </label>
+                        </li>
+                        <li class="form__item">
+                          <label class="form__label form__checkbox">
+                            <input class="form__input" type="checkbox" name="checkbox"/>
+                            <span class="form__check-icon">
+                              <svg class="from__checkbox-icon" width="10" height="10">
+                                <use href="./image/icons.svg#check"></use>
+                              </svg>
+                            </span>
+                            <span class="form__checkbox-text">Погоджуюсь з <span class="form__checkbox-text form__checkbox-text--accent">умовами сервісу</span></span>
+                          </label>
+                        </li>
+                        <li class="form__item"></li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
               </div>
             </li>
             <li class="proposition__item">
