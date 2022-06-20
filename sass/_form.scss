@@ -5,11 +5,15 @@
     width: 100%;
     height: 100%;
     background-color: rgba(51, 51, 51, 0.4);
-    opacity: 1;
+    opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-hiiden{
         opacity: 0;
         pointer-events: none;
+    }
+    @media screen and (max-width:767px){
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 .modal{
@@ -30,13 +34,39 @@
             max-width: 365px;
             height: 506px;
         }
-        @media screen and (min-width:$desktop){
+        @media screen and (min-width:$tablet){
             padding: 58px 140px;
             max-width: 645px;
             height: 570px;
         }
         .backdrop.is-hiiden &{
             transform: translate(-50%, -50%) scale(1.1);
+        }
+}
+.close__button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $mainTextColor;
+    border-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    @media screen and (min-width:$tablet){
+        top: 23px;
+        right: 38px;
+    }
+}
+.close__icon{
+    &--mob {
+            @media screen and (min-width:$tablet) {
+                display: none;
+            }
+        }
+    
+        &--tab {
+            @media screen and(max-width:767px) {
+                display: none;
+            }
         }
 }
 .modal__title{
@@ -46,6 +76,11 @@
         text-align: center;
         color: $cardTextColor;
         margin-bottom: 31px;
+        @media screen and (min-width:$tablet){
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.22;
+        }
 }
 .form{
     margin-right: auto;
@@ -58,9 +93,20 @@
 .form__item{
     &:first-child{
         margin-bottom: 27px;
-        @media screen and (min-width:$desktop){
+        @media screen and (min-width:$tablet){
+            padding-left: 20px;
             margin-bottom: 25px;
         }
+    }
+    &:nth-child(2){
+        margin-bottom: 31px;
+        @media screen and (min-width:$tablet){
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    &:nth-child(3){
+        margin-bottom: 25px;
     }
 
 }
@@ -74,6 +120,10 @@
         line-height: 1.2;
         color: $cardTextColor;
         margin-bottom: 12px;
+        @media screen and (min-width:$tablet){
+            font-size: 20px;
+            line-height: 1.2;
+        }
 }
 .form__input{
     max-width: 302px;
@@ -83,7 +133,7 @@
     box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
     padding-left: 10px;
     cursor: pointer;
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$tablet){
         max-width: 330px;
     }
 }
@@ -107,12 +157,16 @@
         overflow: hidden;
 }
 .checkbox__text{
-    font-size: 16px;
-        line-height: 20px;
+    font-size: 12px;
+        line-height: 1.25;
         color: $cardTextColor;
         &--accent{
             text-decoration: underline;
-
+            color: #D74482;
+            
+        }
+        @media screen and (min-width:$tablet){
+            font-size: 16px;
         }
 }
 .checkbox__icon{
@@ -120,13 +174,42 @@
         align-items: center;
         justify-content: center;
         margin-right: 7px;
-        width: 19px;
-        height: 19px;
+        width: 15px;
+        height: 15px;
         background-color: #F8F8F8;
         border: 0.863636px solid rgba(153, 153, 153, 0.6);
         border-radius: 4px;
         box-shadow: inset 0px 1.72727px 1.72727px rgba(0, 0, 0, 0.2);
+        @media screen and (min-width:$tablet){
+            width: 19px;
+            height: 19px;
+        }
 }
 .checkbox__check-icon{
-   
+   fill: transparent;
+
+   .checkbox__input:checked + * &{
+    fill: #219653;
+   }
+}
+.form__button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+        font-size: 15px;
+        line-height: 1.29;
+        letter-spacing: 0.03em;
+        color: $subtitleTextColor;
+        border-color: transparent;
+        padding: 12px 33px;
+        cursor: pointer;
+        background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
+            box-shadow: 6.77778px 6.77778px 14.5238px rgba(52, 54, 74, 0.5), inset 2.90476px 1.93651px 3.87302px rgba(227, 68, 151, 0.5);
+            border-radius: 24.2063px;
+            @media screen and (min-width:$desktop){
+                font-size: 19px;
+                    line-height: 1;
+                padding: 17px 28px;
+            }
 }
