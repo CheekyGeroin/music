@@ -50,6 +50,7 @@
     background-color: $mainTextColor;
     border-color: transparent;
     border-radius: 6px;
+    padding: 0;
     cursor: pointer;
     @media screen and (min-width:$tablet){
         top: 23px;

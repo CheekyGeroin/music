@@ -35,15 +35,15 @@
             </li>
           </ul>
         </div>
-        <button class="menu__button" type="button">
+        <button class="menu__button" type="button" data-menu-button aria-expanded="false">
           <svg class="open-icon" width="29" height="23">
             <use href="./image/icons.svg#open-icon"></use>
           </svg>
           <svg class="close-icon" width="29" height="23">
-            <use></use>
+            <use href="./image/icons.svg#close-menu"></use>
           </svg>
         </button>
-        <div class="menu">
+        <div class="menu" data-menu>
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -180,7 +180,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__icon" width="60" height="60">
-                <use href="./image/icons.svg#person"></use>
+                <use href="./image/icons.svg#card"></use>
               </svg>
               <p class="advantages__text">Adapt to your taste</p>
             </li>
@@ -504,5 +504,6 @@
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/second-modal.js" type="module"></script>
     <script src="./js/third-modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
