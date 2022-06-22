@@ -89,12 +89,19 @@
     }
 }
 .about__accent{
-    display: flex;
-    align-items: flex-start;
+    // display: flex;
+    // align-items: flex-start;
     cursor: pointer;
-    @media screen and (min-width: $tablet){
-        align-items: baseline;
-    }
+    // @media screen and (min-width: $tablet){
+    //     align-items: baseline;
+    // }
+}
+.about__accent-link{
+    display: flex;
+        align-items: flex-start;
+        @media screen and (min-width: $tablet) {
+                align-items: baseline;
+            }
 }
 .about__icon{
     fill: $mainTextColor;

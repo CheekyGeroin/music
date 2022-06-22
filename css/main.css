@@ -323,8 +323,23 @@ a {
           align-items: baseline;
 }
 
+@media screen and (max-width: 767px) {
+  .header__container {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .logo {
+  margin-right: 25px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 17px;
+  }
 }
 
 .logo__icon {
@@ -351,13 +366,6 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-right: 17px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .language {
-    display: none;
   }
 }
 
@@ -372,9 +380,15 @@ a {
 }
 
 .language__link {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.2;
   color: #F0F4F3;
+}
+
+@media screen and (min-width: 768px) {
+  .language__link {
+    font-size: 20px;
+  }
 }
 
 .language__link--active {
@@ -391,9 +405,18 @@ a {
   background: linear-gradient(180deg, #D74482 -15.38%, #9B2981 89.52%);
 }
 
+.menu.is-open {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -478,6 +501,32 @@ a {
 }
 
 .menu__button {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
+.menu__button.is-open {
+  position: absolute;
+  top: 59px;
+  right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__button {
+    display: none;
+  }
+}
+
+.close-icon {
+  display: none;
+}
+
+.menu__button.is-open .close-icon {
+  display: block;
+}
+
+.menu__button.is-open .open-icon {
   display: none;
 }
 
@@ -625,14 +674,17 @@ a {
 }
 
 .hero__scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   cursor: pointer;
 }
 
+.hero__scroll-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
-  .hero__scroll {
+  .hero__scroll-link {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -787,17 +839,20 @@ a {
 }
 
 .about__accent {
+  cursor: pointer;
+}
+
+.about__accent-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  .about__accent {
+  .about__accent-link {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1519,7 +1574,6 @@ a {
 }
 
 .footer__container {
-  padding: 0px;
   padding-top: 30px;
   padding-bottom: 41px;
   border-top: 1px solid #F0F4F3;
@@ -1533,6 +1587,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer__container {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 41px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1540,6 +1597,14 @@ a {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1577,6 +1642,12 @@ a {
 .footer__student-text--accent {
   font-weight: 600;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__student-text--pad {
+    padding-right: 19px;
+  }
 }
 
 @media screen and (max-width: 767px) and (max-width: 1199px) {

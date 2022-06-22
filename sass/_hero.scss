@@ -108,11 +108,17 @@
     }
 }
 .hero__scroll{
-    display: flex;
+    // display: flex;
     cursor: pointer;
-    @media screen and (min-width: $tablet){
-        align-items: center;
-    }
+    // @media screen and (min-width: $tablet){
+    //     align-items: center;
+    // }
+}
+.hero__scroll-link{
+    display: flex;
+    @media screen and (min-width: $tablet) {
+            align-items: center;
+        }
 }
 .hero__icon{
     fill: $subtitleTextColor;

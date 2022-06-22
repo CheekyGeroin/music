@@ -2,7 +2,6 @@
     background-color: $advantagesTitleColor;
 }
 .footer__container{
-    padding: 0px;
     padding-top: 30px;
     padding-bottom: 41px;
     border-top: 1px solid $mainTextColor;
@@ -10,9 +9,15 @@
         max-width: 315px;
     }
     @media screen and (min-width:$tablet){
+        padding: 0px;
+        padding-top: 30px;
+            padding-bottom: 41px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    @media screen and (min-width:$desktop){
+        justify-content: center;
     }
 }
 .footer__rights{
@@ -37,6 +42,12 @@
     &--accent{
         font-weight: 600;
         color: $subtitleTextColor;
+    }
+    @media screen and (min-width:$tablet) and (max-width: 1199px){
+        &--pad{
+            padding-right: 19px;
+        }
+        
     }
     @media screen and (max-width: 767px) and (max-width:1199px){
         max-width: 232px;
