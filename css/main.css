@@ -308,12 +308,6 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    left: 80px;
-  }
-}
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
