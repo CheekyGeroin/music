@@ -297,7 +297,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1400px;
+    width: 1200px;
   }
 }
 
@@ -1675,9 +1675,9 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 

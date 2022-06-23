@@ -17,7 +17,7 @@
         justify-content: space-around;
     }
     @media screen and (min-width:$desktop){
-        justify-content: center;
+        justify-content: flex-end;
     }
 }
 .footer__rights{
